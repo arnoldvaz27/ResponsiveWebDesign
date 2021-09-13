@@ -1,0 +1,38 @@
+
+/*tr[class^="SCHOLARSHIP"] 
+{        
+   background: yellow;  
+}
+*/
+tr:nth-of-type(even)
+{
+    background-color: yellow;
+}
+
+tr:nth-of-type(odd)
+{
+    background-color: pink;
+    font-size: small;
+    font-style: italic;
+}
+
+tr:first-of-type
+{
+   background-color: red;
+   color:white;
+   font-size: larger;
+}
+
+tr:nth-child(2)
+{
+    background-color: orange;
+    color:white;
+    font-style: bold;
+}
+
+
+tr:last-of-type
+{
+   background-color: bisque;
+   font-size: larger;
+}

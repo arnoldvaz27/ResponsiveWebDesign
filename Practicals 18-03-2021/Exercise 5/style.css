@@ -1,0 +1,61 @@
+p{
+    background-color: peru;
+    padding: 5px;
+}
+div{
+    background-color: brown;
+    padding: 4px;
+    color: white;
+}
+
+@media (min-width:1024px)
+{
+    p{
+        background-color: burlywood;
+        padding: 5px;
+    }
+    div{
+        background-color: peru;
+        padding: 4px;
+        color: white;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px)
+{
+    p{
+        background-color: aquamarine;
+        padding: 5px;
+    }
+    div{
+        background-color: burlywood;
+        padding: 4px;
+        color: black;
+    }
+}
+
+@media (min-width:320px) and (max-width:767px)
+{
+    p{
+        background-color: royalblue;
+        padding: 5px;
+        color: white;
+    }
+    div{
+        background-color: aquamarine;
+        padding: 4px;
+        color: black;
+    }
+}
+@media (max-width:320px)
+{
+    p{
+        background-color: beige;
+        padding: 5px;
+    }
+    div{
+        background-color: royalblue;
+        padding: 4px;
+        color: white;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div ng-app="" ng-controller="myController">
+        <p>Examples of Ng-Controller: - </p><br><br>
+        <p><b>Name and Surname</b></p>
+        <p><input type="text" ng-model="FName" /></p>
+        <p><input type="text" ng-model="LName" /></p><br><br>
+        <p><b>Full Name: </b> {{FName + " " + LName}}</p><br>
+        <p><b>Name and Your Percentage: </b>Hii!! {{Name}} , You have got {{Marks}}.</p><br>
+        <p>List of all the fruits: </p>
+        <h4>
+            <li ng-repeat="fruit in fruits">
+                {{fruit}}
+            </li>
+        </h4>
+    </div>
+    <script>
+        function myController($scope) {
+            $scope.FName = "Arnold",
+                $scope.LName = "Vaz"
+            $scope.fruits = ['Apple', 'Orange', 'Pineapple', 'Mango', 'Custard Apple', 'Water']
+            $scope.Name = "Arnold Vaz"
+            $scope.Marks = "95%"
+
+
+        }
+    </script>
+</body>
+
+</html>
