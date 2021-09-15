@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>PizzaaBud App </title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>        
+        <link rel='stylesheet' href='Scripts/jquery.mobile-1.4.5.css'/>
+        <script src='http://code.jquery.com/jquery-1.11.1.min.js'></script>
+        <script src='Scripts/jquery.mobile-1.4.5.min.js'></script>       
+        <style>
+          .custombackground {           
+            background: #ffd800;          
+          }       
+            .customfont {font-family: Verdana; color: #000;
+                       
+          }     
+              
+         </style>
+    </head>
+    <body>
+        <div id="nonvegpizzas" data-role="page" class='custombackground'>  
+          <script>
+            $("#nonvegpizzas").on("pageinit", function(event) {
+ 
+              $("#listitem1").on("swiperight",function(){
+              $("#ingdivlistitem1").html("Chicken, Cheese, Onion.")  
+              });   
+                        
+              $("#listitem2").on("swiperight",function(){
+              $("#ingdivlistitem2").html("Chicken, Capsicum, Onion.")   
+              });            
+ 
+              $("#listitem3").on("swiperight",function(){
+              $("#ingdivlistitem3").html("Chicken, Capsicum, Cheese.")   
+              }); 
+ 
+              $("#listitem4").on("swiperight",function(){
+              $("#ingdivlistitem4").html("Chicken, Onion, Jalapenos.")   
+              }); 
+ 
+              $("#listitem5").on("swiperight",function(){
+              $("#ingdivlistitem5").html("Chicken, Olives, Red paprika.")   
+              }); 
+ 
+              $("#listitem6").on("swiperight",function(){
+              $("#ingdivlistitem6").html("Chicken, Red paprika.")   
+             }); 
+ 
+           });
+         </script>
+
+         <header data-role="header" data-position="fixed" data-theme="b">
+            <img src="Images/headerimage.jpg" alt="Header Image" style="float:left;display:inline"/>
+              <div data-role="navbar">   
+                  <a href="register.html" data-role="button" data-inline="true">Register</a>
+                  <a href="contactUs.html" data-role="button" data-inline="true" data-transition="pop">Contact Us</a>
+                  <a href="aboutUs.html" data-role="button" data-inline="true" data-transition="flip">About Us</a>             
+              </div>
+          </header>  
+                 
+          <div data-role="collapsible" data-collapsed="true" class="customfont">
+
+             <h4>Non-Veg Pizzas:</h4>             
+               <ul data-role="listview" data-inset="true" data-autodividers="true" >
+                  <li id=listitem1>
+                     <img src="Images/nonvegpizza1.jpg" alt="Barbeque Chicken"/> 
+                     <h3 style='margin-left: 5px'>Barbeque Chicken</h3>
+                     <p><strong>$30</strong></p>
+                  </li>
+                  <li id="ingdivlistitem1" data-autodividers="false"> 
+                  </li>
+
+                  <li id=listitem2>
+                     <img src="Images/nonvegpizza2.jpg" alt="Chicken Fiesta"/>  
+                     <h3 style='margin-left: 5px'>Chicken Fiesta</h3>
+                     <p><strong>$40</strong></p>
+                  </li>
+                  <li id="ingdivlistitem2" data-autodividers="false"> 
+                  </li>
+                  
+                   <li id=listitem3>
+                      <img src="Images/nonvegpizza3.jpg" alt="Chicken Delight"/>   
+                      <h3 style='margin-left: 5px'>Chicken Delight</h3>
+                      <p><strong>$45</strong></p>
+                   </li>
+                   <li id="ingdivlistitem3" data-autodividers="false"> 
+                   </li>
+
+                    <li id="listitem4">
+                      <img src="Images/nonvegpizza4.jpg" alt="Chicken Hawaiian"/>  
+                      <h3 style='margin-left: 5px'>Chicken Hawaiian</h3>
+                      <p><strong>$42</strong></p>
+                  </li>
+                  <li id="ingdivlistitem4" data-autodividers="false"> 
+                  </li>
+
+                  <li id="listitem5">
+                      <img src="Images/nonvegpizza5.jpg" alt="Chick n Spicy"/>   
+                      <h3 style='margin-left: 5px'>Chick n Spicy</h3>
+                      <p><strong>$38</strong></p>
+                  </li>
+                  <li id="ingdivlistitem5" data-autodividers="false"> 
+                  </li>
+
+                  <li id="listitem6">
+                      <img src="Images/nonvegpizza6.jpg" alt="Zesty Chicken"/>   
+                      <h3 style='margin-left: 5px'>Zesty Chicken</h3>
+                       <p><strong>$35</strong></p>
+                  </li>
+                  <li id="ingdivlistitem6" data-autodividers="false"> 
+                  </li>
+
+               </ul>        
+         </div>  
+             <footer data-role="footer" data-position="fixed" data-theme="b">
+                 <h3> © Copyright - PizzaBud 2014</h3>
+             </footer>
+        </div>   
+        
+    </body>
+</html>

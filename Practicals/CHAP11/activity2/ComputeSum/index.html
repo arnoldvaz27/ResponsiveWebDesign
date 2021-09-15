@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Compute Sum</title>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    
+    <script type="text/javascript">
+
+        if (typeof (Worker) !== "undefined") {
+
+            var appworker = new Worker('js/testworker.js');
+
+            appworker.onmessage = function (event) {
+                document.getElementById('result').textContent = event.data;
+            };
+
+            function SendNumberToWorker(number) {
+                appworker.postMessage(number);
+            } 
+
+            testworker.onerror = function(e) 
+           {
+            document.getElementById('errormessage').textContent =[ e.filename, e.lineno, e.message].join(' ');
+           };
+
+        }
+        else {
+            alert("Your Browser does not support Web Workers.")
+        }
+
+    </script>
+ 
+</head>
+<body style ="background-color:#dfe7ec; font-family: Verdana;font-size: 16px;">
+  <div>        
+    <h3>Progress</h3>
+    <h3><output id='result'></output></h3>        
+    Enter a number: <input id="number" type="text" /><br />     
+    <input type="button" onclick="SendNumberToWorker($('#number').val()); return false;" value="Send" />
+  </div>
+  <div>  
+    <h3><output id='errormessage'></output></h3>
+  </div>
+</body>
+</html>

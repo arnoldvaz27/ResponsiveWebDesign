@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Register </title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>        
+        <link rel='stylesheet' href='Scripts/jquery.mobile-1.4.3.css'/>
+        <script src='http://code.jquery.com/jquery-1.7.1.min.js'></script>
+        <script src='Scripts/jquery.mobile-1.4.3.min.js'></script>
+        <style>
+          .custombackground {           
+            background: #ffd800;          
+          }        
+            
+            .customfont {font-family: Verdana; color: #000;
+                       
+            }
+         </style>
+    </head>
+    <body>            
+        <div id="register.html" data-role="page" class='custombackground'>
+
+            <header data-role="header" data-position="fixed" data-theme="b">
+              <img src="Images/headerimage.jpg" alt="Header Image" style="float:left;display:inline"/>
+                <h1> MobileHub </h1>
+            </header>   
+
+             <div data-role="content" class="customfont">
+               <form method="post" action="registerform.aspx">                                         
+
+                  <label for="name">Name:</label>
+                    <input type="text" name="fname" id="name">
+                  <label for="address">Address:</label>
+                    <textarea cols="5" rows="80" name="address" id="textarea"></textarea>                    
+                   <label for="emailid">E-mail ID:</label>
+                    <input type="text" name="emailid" id="emailid">              
+               
+                         
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                     <div class="ui-grid-b">
+                          <div class="ui-block-a">   
+                                                   
+                         <label for="name">Gender:</label>
+                         
+                         </div>
+                          <div class="ui-block-b"> 
+                       <label for="male">Male</label>
+                          <input type="radio" name="gender" id="male" value="male">
+                              </div>
+                         <div class="ui-block-c"> 
+                       <label for="female">Female</label>
+                           <input type="radio" name="gender" id="female" value="female">
+                         </div>
+                         </div>
+                </fieldset>                
+                    <label for="slider-1">Age:</label>
+                      <input type="range" name="slider-1" id="slider-1" value="21" min="18"  max="60" />
+
+                <input type="submit" value="Submit" data-inline="true">                
+               </form>
+                                
+             </div>
+            <footer data-role="footer" data-position="fixed" data-theme="b">
+                 <h3> © Copyright - MobileHub 2014</h3>
+             </footer>
+          </div>       
+        </body>
+</html>

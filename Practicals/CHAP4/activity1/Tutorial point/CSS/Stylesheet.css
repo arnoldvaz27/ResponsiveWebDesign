@@ -1,0 +1,158 @@
+
+
+body{
+    margin: 0;
+}
+
+#container {
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-top: 1px;
+    margin-right: auto;
+    border: 1px solid gray;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.heading {
+    margin-top: 1px;
+    color: white;
+    background: #0d1424 url(../image/banner.png) no-repeat center top;
+    font-size: 50pt;
+    text-align: center;
+    padding: 30px;
+    font-style: oblique;
+}
+
+#mainnav {
+    margin-top: -44px;
+    display: block;
+    background-color: #F0F0F0;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #154A81;
+}
+
+nav {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    float: right;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border-bottom: 1px solid #154A81;
+}
+
+
+a {
+    float: right;
+    width: 8em;
+    margin-top: 1px;
+    text-decoration: none;
+    color: #154A81;
+    padding: 0.2em 0.6em;
+}
+
+a:hover {
+    color: fuchsia;
+}
+
+li {
+    display: inline;
+}
+
+
+section {
+    margin: 2px;
+    width: 100%;
+    display: block;
+}
+
+content {
+    width: 100%;
+    height: auto;
+    display: block;
+    font-family: Times,"Times New Roman",Georgia,serif;
+    float: left;
+    margin-left: 2px;
+    padding: 5px;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+#maincontent {
+    display: block;
+    width: 95%;
+}
+
+
+
+#leftcontent {
+    width: 45%;
+    height: auto;
+    display: block;
+    float: left;
+    margin-right: 1px;
+    padding: 2px;
+}
+
+
+#rightcontent {
+    width: 45%;
+    height: auto;
+    display: block;
+    float: right;
+    margin-left: 1px;
+    padding: 2px;
+}
+
+
+a.readmorebtn {
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #2F86C3;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    text-decoration: none;
+    margin-left: 0;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    border: 1px solid #aaaaaa;
+    border: 1px solid #8AC007;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+footer {
+    clear: left;
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 1px;
+    background: gray;
+}
+
+#foot {
+    color: white;
+    font-style: oblique;
+}

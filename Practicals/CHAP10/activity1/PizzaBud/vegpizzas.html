@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>PizzaaBud App </title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>        
+        <link rel='stylesheet' href='Scripts/jquery.mobile-1.4.5.css'/>
+        <script src='http://code.jquery.com/jquery-1.11.1.min.js'></script>
+        <script src='Scripts/jquery.mobile-1.4.5.min.js'></script>        
+        <style>
+          .custombackground {           
+            background: #ffd800;          
+          }       
+            .customfont {font-family: Verdana; color: #000;
+                       
+          }     
+              
+         </style>
+    </head>
+    <body>
+
+        <div id="vegpizzas" data-role="page" class='custombackground'>     
+             <header data-role="header" data-position="fixed" data-theme="b">
+              <img src="Images/headerimage.jpg" alt="Header Image" style="float:left;display:inline"/>
+                 <div data-role="navbar">   
+                    <a href="register.html" data-role="button" data-inline="true">Register</a>
+                    <a href="contactUs.html" data-role="button" data-inline="true" data-transition="pop">Contact Us</a>
+                    <a href="aboutUs.html" data-role="button" data-inline="true" data-transition="flip">About Us</a>             
+                </div>
+            </header>  
+           <div data-role="collapsible" data-collapsed="true" class="customfont"> 
+             <h4>Veg Pizzas:</h4>             
+               <ul data-role="listview" data-inset="true" data-autodividers="true" >
+                  <li> 
+                     <img src="Images/vegpizza1.jpg" alt="Cheesy Delight"/>
+                     <h3 style='margin-left: 5px'>Cheesy Delight</h3>
+                      <p><strong>$25</strong></p>
+                  </li>
+                  <li>
+                     <img src="Images/vegpizza2.jpg" alt="Country Special"/>
+                     <h3 style='margin-left: 5px'>Country Special</h3>
+                      <p><strong>$35</strong></p>
+                  </li>
+                  <li>
+                      <img src="Images/vegpizza3.jpg" alt="Capsicum Flavor"/> 
+                      <h3 style='margin-left: 5px'>Capsicum Flavor</h3>
+                      <p><strong>$30</strong></p>
+                  </li>
+                   <li>
+                      <img src="Images/vegpizza4.jpg" alt="Mexican Delight"/> 
+                      <h3 style='margin-left: 5px'>Mexican Delight</h3>
+                       <p><strong>$28</strong></p>
+                   </li>
+                   <li>
+                      <img src="Images/vegpizza5.jpg" alt="Simply Veg"/>
+                      <h3 style='margin-left: 5px'>Simply Veg</h3>
+                       <p><strong>$22</strong></p>
+                  </li>
+                  <li>
+                      <img src="Images/vegpizza6.jpg" alt="Tangy Tomato"/> 
+                      <h3 style='margin-left: 5px'>Tangy Tomato</h3>
+                      <p><strong>$20</strong></p>
+                  </li>
+            
+               </ul>      
+             </div>     
+          </div>   
+             <footer data-role="footer" data-position="fixed" data-theme="b">
+                 <h3> © Copyright - PizzaBud 2014</h3>
+             </footer>       
+       </div>
+   </body>
+</html>

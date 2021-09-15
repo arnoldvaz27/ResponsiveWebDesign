@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Register </title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>        
+        <link rel='stylesheet' href='Scripts/jquery.mobile-1.4.5.css'/>
+        <script src='http://code.jquery.com/jquery-1.11.1.min.js'></script>
+        <script src='Scripts/jquery.mobile-1.4.5.min.js'></script>   
+        <style>
+          .custombackground {           
+            background: #ffd800;          
+          }        
+            
+            .customfont {font-family: Verdana; color: #000;
+                       
+            }
+         </style>
+
+    </head>
+    <body>            
+      <div id="register.html" data-role="page" class='custombackground'>
+          <header data-role="header" data-position="fixed" data-theme="b">
+            <img src="Images/headerimage.jpg" alt="Header Image" style="float:left;display:inline"/>
+              <h1> PizzaBud </h1>
+           </header>   
+
+     
+           <div data-role="content" class="ui-content customfont">
+               <form id="jquerymform" action="formprocessor.aspx" method="post">
+               <ul data-role="listview" data-inset="true">
+                 <li data-role="fieldcontain">
+	               <label for="name">Name:</label>
+	               <input type="text" name="name" id="name" value="" />
+	             </li>
+
+                 <li data-role="fieldcontain">
+                   <label for="address">Address:</label>
+                   <textarea cols="5" rows="80" name="address" id="textarea"></textarea>  
+                 </li>
+
+	             <li data-role="fieldcontain">
+                   <label for="phone">Phone No:</label>
+                   <input type="text" name="phone" id="phone">
+                 </li>
+
+                 <li>            
+                   <fieldset data-role="controlgroup" data-type="horizontal">
+                     <div class="ui-grid-b">
+                       <div class="ui-block-a">   
+                         <label for="name">Gender:</label>
+                       </div>
+                       <div class="ui-block-b"> 
+                         <label for="male">Male</label>
+                         <input type="radio" name="gender" id="male" value="male">
+                       </div>
+                       <div class="ui-block-c"> 
+                         <label for="female">Female</label>
+                         <input type="radio" name="gender" id="female" value="female">
+                       </div>
+                     </div>
+                   </fieldset>   
+                 </li>
+
+                 <li>            
+                   <label for="slider-1">Age:</label>
+                   <input type="range" name="slider-1" id="slider-1" value="21" min="18"  max="60"/>
+                 </li>
+
+                 <li>
+                   <div class="ui-block-b"><button type="submit" data-theme="a">Submit</button></div>       
+                 </li>
+              </ul>
+            </form>    
+          </div>
+          <footer data-role="footer" data-position="fixed" data-theme="b">
+            <h3> © Copyright - PizzaBud 2014</h3>
+          </footer>
+        </div>       
+      </body>
+</html>

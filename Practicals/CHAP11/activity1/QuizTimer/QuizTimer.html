@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/QuizTimer.js"></script>
+       
+         <title> Quiz on Forms of Who</title>
+        <style>
+            
+                    body {
+                        margin: 0px;
+                    }
+            
+                    #container {
+                    width:80%; margin: 0px auto; background: #f1d8d8;
+                    }
+            
+                    #clock {
+            
+             float:right;
+             background-color: #f14545;
+             width:100%; 
+             color: #030b39;
+             font-size: 20px; 
+             font-family: Arial;
+                    }
+            
+                    #time {
+            
+                     padding-right:10px; 
+                    float: right;
+                    }
+            #header
+            {
+               border-bottom: 1px solid #f14545;
+            
+            }
+            #titletext {
+            padding:50px 0; margin: 0px auto; font-size: 50px; text-align: center; font-family: Arial; color: #030b39;
+            }
+            #leadline {
+                font-size: 20px; margin-left:20px;font-family: Arial;
+            }
+            .ques {
+            
+                font-size:16px; margin-left:20px;font-family: Arial;
+            }
+            .num {
+             font-size:18px;font-weight: bold;
+            }
+            
+            .btn {
+                padding: 7px;
+                font-size: 16px;
+                color: #0c0224;
+            }
+            .btn:hover {
+                background-color: #f1d8d8;
+            }
+
+            #footer
+            {
+               background: #f14545; text-align: center; font-family: Arial; 
+            }
+            
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <div id="container">
+            <div id="clock">
+                <p id="time"><output id="result"></output></p>
+
+            </div>
+            <div id="header">
+                <div id="titletext">
+ Quiz on Forms of <i>Who</i>
+                </div>
+
+
+            </div>
+            <div id="Testcontent">
+                <p id="leadline">
+Select the correct form of the word <i>who</i> or <i>whoever</i> from the choices provided after each sentence. The word you choose should fit the blank in the sentence. </p>
+                <section class="ques">
+
+                    <span class="num">1.</span>
+
+To ____________  did you give the book?
+                    <br><br>
+
+                    <input type="radio" name="que1" id="que1" value="A">
+WHO<br>
+
+                    <input type="radio" name="que1" id="que1" value="B">
+WHOM<br><br>
+
+
+
+                    <span class="num">2.</span>
+____________  will you ask to help you with all this work?
+                    <br>
+
+                    <input type="radio" name="que2" id="que2" value="A">
+WHOM<br>
+
+                    <input type="radio" name="que2" id="que2" value="B">
+    WHO<br><br>
+
+
+                    <span class="num">3.</span>
+____________   responsible for this decision?
+                    <br>
+
+                    <input type="radio" name="que3" id="que3" value="A">
+WHO<br>
+
+                    <input type="radio" name="que3" id="que3" value="B">
+WHOM<br>
+
+                    <input type="radio" name="que3" id="que3" value="C">
+WHO'S<br><br>
+
+                    <span class="num">4.</span>
+
+You may give this money to ____________  you please.
+                    <br>
+
+                    <input type="radio" name="que4" id="que4" value="A">
+WHOMEVER<br>
+
+                    <input type="radio" name="que4" id="que4" value="B">
+WHOEVER<br><br>
+                </section>
+            </div>
+            <div id="footer">
+                <br><br>
+
+                <button class="btn" id="start" onclick="startWorker()">Start Test</button>
+                <button class="btn" id="stop" onclick="stopWorker()">Submit Test</button>
+                <br><br>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>
